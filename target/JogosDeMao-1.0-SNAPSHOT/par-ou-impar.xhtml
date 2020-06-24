@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Par ou Ímpar</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="WEB-INF/templates/template.xhtml">
+            <ui:define name="content">
+                <h:form>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <div class="row-card">
+                        <div class="card-player">
+                            <div class="card-container">
+                                <center><h:graphicImage value="/images/player-one.png" width="170" height="170" /></center>
+                                <h:message for="campo-nome-jogador-1" style="color: red" />
+                                <br />
+                                <h:outputLabel class="label" value="Nome do Jogador 1:" for="campo-nome-jogador-1" />
+                                <br />
+                                <h:inputText id="campo-nome-jogador-1" class="input" value="#{parOuImparBean.jogador1}" required="true" requiredMessage="Por favor insira um nome"></h:inputText>
+                                <h:message for="grupo-numero-jogador-1" style="color: red" />
+                                <br />
+                                <h:outputLabel class="label" value="Grupo de números:" for="grupo-numero-jogador-1" />
+                                <br />
+                                <h:selectOneMenu id="grupo-numero-jogador-1" class="input" value="#{parOuImparBean.grupoNumeros1}" required="true" requiredMessage="Por favor insira um grupo de números">
+                                    <f:selectItem itemValue="1" itemLabel="Ímpar" />
+                                    <f:selectItem itemValue="2" itemLabel="Par" />
+                                </h:selectOneMenu>
+                                <h:message for="campo-jogada-jogador-1" style="color: red" />
+                                <br />
+                                <h:outputLabel class="label" value="Número da jogada:" for="campo-jogada-jogador-1" />
+                                <br />
+                                <h:inputText id="campo-jogada-jogador-1" class="input" value="#{parOuImparBean.jogada1}"></h:inputText>
+                            </div>
+                        </div>
+                        <div class="card-player">
+                            <div class="card-container">
+                                <center><h:graphicImage value="/images/player-two.png" width="170" height="170" /></center>
+                                <h:message for="campo-nome-jogador-2" style="color: red" />
+                                <br />
+                                <h:outputLabel class="label" value="Nome do Jogador 2:" for="campo-nome-jogador-2" />
+                                <br />
+                                <h:inputText id="campo-nome-jogador-2" class="input" value="#{parOuImparBean.jogador2}" required="true" requiredMessage="Por favor insira um nome"></h:inputText>
+                                <h:message for="grupo-numero-jogador-2" style="color: red" />
+                                <br />
+                                <h:outputLabel class="label" value="Grupo de números:" for="grupo-numero-jogador-2" />
+                                <br />
+                                <h:selectOneMenu id="grupo-numero-jogador-2" class="input" value = "#{parOuImparBean.grupoNumeros2}" required="true" requiredMessage="Por favor insira um grupo de números">
+                                    <f:selectItem itemValue="1" itemLabel="Ímpar" />
+                                    <f:selectItem itemValue="2" itemLabel="Par" />
+                                </h:selectOneMenu>
+                                <h:message for="campo-jogada-jogador-2" style="color: red" />
+                                <br />
+                                <h:outputLabel class="label" value="Número da jogada:" for="campo-jogada-jogador-2" />
+                                <br />
+                                <h:inputText id="campo-jogada-jogador-2" class="input" value="#{parOuImparBean.jogada2}"></h:inputText>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row-button">
+                        <h:commandButton class="button-medium" value="Lançar jogada" action="#{parOuImparBean.calcularResultadoJogada()}" />
+                        <br />
+                        <h:commandButton class="button-medium" value="Lançar jogada randômica" action="#{parOuImparBean.lancarJogadaRandomica()}" />
+                        <br />
+                        <h:button value="Voltar ao início" class="button-medium" outcome="index" />
+                    </div>
+                </h:form>
+            </ui:define>    
+        </ui:composition>
+    </h:body>
+</html>

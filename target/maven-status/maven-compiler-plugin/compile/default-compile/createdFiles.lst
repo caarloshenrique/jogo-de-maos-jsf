@@ -1,0 +1,5 @@
+br\com\jogosdemao\resources\JavaEE8Resource.class
+br\com\jogosdemao\beans\DoisOuUmBean.class
+br\com\jogosdemao\beans\JokempoBean.class
+br\com\jogosdemao\JAXRSConfiguration.class
+br\com\jogosdemao\beans\ParOuImparBean.class
