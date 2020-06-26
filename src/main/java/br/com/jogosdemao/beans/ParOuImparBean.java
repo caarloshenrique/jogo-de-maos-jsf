@@ -139,7 +139,7 @@ public class ParOuImparBean implements Serializable {
             return false;
         }
 
-        return !(getJogada1().equals("") || getJogador2().equals(""));
+        return !(getJogada1().equals("") || getJogada2().equals(""));
     }
 
     public void definirVencedor(String grupo) {
