@@ -123,7 +123,7 @@ public class ParOuImparBean implements Serializable {
 
         setMensagem("É preciso selecionar grupos de números distintos para os jogadores!");
 
-        if (getJogada1().equals("") || getJogador2().equals("")) {
+        if (getJogada1().equals("") || getJogada2().equals("")) {
             setMensagem("É preciso inserir uma jogada para os jogadores!");
         }
 
