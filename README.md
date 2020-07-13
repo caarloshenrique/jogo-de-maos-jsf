@@ -5,7 +5,7 @@
 
 O projeto foi feito utilizando as seguintes tecnologias:
 
-- [Java 8](https://www.java.com/pt_BR/download/faq/java8.xml)
+- [Java](https://www.java.com/pt_BR/download/faq/java8.xml)
 - [JavaServer Faces](https://www.oracle.com/java/technologies/javaserverfaces.html)
 
 ## :clipboard: Pré-requisitos
