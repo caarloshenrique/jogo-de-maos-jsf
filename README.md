@@ -11,6 +11,7 @@ O projeto foi feito utilizando as seguintes tecnologias:
 ## :clipboard: Pré-requisitos
 
 - [Java 8](https://www.java.com/pt_BR/download/faq/java8.xml)
+- [JavaServer Faces 2.3](https://www.oracle.com/java/technologies/javaserverfaces.html)
 - [GlassFish](https://javaee.github.io/glassfish/download)
 
 ## :page_facing_up: Licença 
